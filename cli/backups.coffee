@@ -1,5 +1,5 @@
 ###############################################################################
-# Lists Plan information
+# Lists Server information
 ###############################################################################
 
 Promise = require("bluebird")
@@ -10,10 +10,10 @@ CONFIG = require("convig").env({
 
 Promise.try(() ->
   client = new JiffyBoxClient(CONFIG.APIKEY)
-  client.getDistros()
+  client.getBackups()
 )
 .then((data) ->
-  data.forEach (distro) -> console.log(distro)
+  data.forEach (box) -> console.log(box)
 )
 .catch((e) ->
   console.error(e)

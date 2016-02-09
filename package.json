@@ -1,6 +1,6 @@
 {
     "name": "jiffybox",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "HTTPS client for accessing JiffyBox API",
     "main": "js/JiffyBoxClient.js",
     "files": [
@@ -14,21 +14,21 @@
         "test": "./node_modules/.bin/mocha -b js/test.js"
     },
     "dependencies": {
-        "async": "^1.4.2",
+        "bluebird": "^3.2.2",
         "limiter": "^1.0.5",
-        "request": "^2.60.0"
+        "request": "^2.69.0"
     },
     "devDependencies": {
-        "coffee-script": "^1.9.3",
+        "coffee-script": "^1.10.0",
         "convig": "^1.2.0",
-        "mocha": "^2.2.5",
-        "moment": "^2.10.6",
-        "should": "^7.0.3"
+        "mocha": "^2.4.5",
+        "moment": "^2.11.2",
+        "should": "^8.2.1"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/typeduck/convig.git"
     },
     "author": "Ruquay K Calloway",
-    "license": "MIT License"
+    "license": "MIT"
 }
